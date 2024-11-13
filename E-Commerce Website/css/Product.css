@@ -1,0 +1,193 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: #1D212B;
+    margin: 4px;
+}
+
+.ImgBox{
+    height: 80vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-slider{
+    position: relative;
+    margin-left: 90px;
+    margin-right: 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.img-slider .SlidingImg{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    border-radius: 20px;
+    clip-path: inset(0 50% 0 50%);;
+}
+
+.img-slider .SlidingImg.active{
+    clip-path: inset(0 0 0 0);
+    transition: ease 1.5s;
+    transition-property: clip-path;
+}
+
+.img-slider .SlidingImg .Slideimg{
+    z-index: 1;
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.img-slider .SlidingImg .info{
+    position: absolute;
+    top: 0;
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+
+}
+
+.img-slider .SlidingImg .info h2{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    
+}
+
+.img-slider .SlidingImg .info p{
+    color: green;
+    background: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 900;
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+.img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.img-slider .navigation .btn.active{
+    background: #1D212B;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    outline: 2px solid white;
+}
+
+.column a{
+    text-decoration: none;
+    color: #1D212B;
+    font-size: 20px;
+}
+
+.card{
+    box-sizing: border-box;
+    width: 390px;
+    height: 350px;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px 25px;
+    margin: 25px 50px;
+    box-shadow: 0px 0px 5px 5px grey;
+    background-size: cover;
+    cursor: pointer;
+    background-position: center;
+    transition: transform 0.5s;
+    align-items: center;
+}
+
+.card:hover{
+    transform: translateX(10px) translateY( -10px)
+}
+
+.card h3{
+    box-sizing: border-box;
+    background-color: #1D212B;
+    padding: 5px 15px;
+    border-radius: 10px;
+    outline: 5px solid;
+    color: white;
+    margin: 0px 50px;
+
+}
+
+h1{
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    left: 100px;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    background-color: #ffffff;
+    height: 3px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+h1{
+    box-sizing: border-box;
+    width: 85%;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    font-size: 30px;
+}
+
+
+
+.card1{
+    padding-top: 10px;
+    background-image: url(../Img/bag/patrick-langwallner-VfKXJrD68Tw-unsplash.jpg);
+}
+
+.card2{
+    background-image: url(../Img/memorycard/tom-pumford-MC5WbGo_bZM-unsplash.jpg);
+}
+
+.card3{
+    background-image: url(../Img/tripod/tripod\ 3.jpg);
+}
+
+.card4{
+    background-image: url(../Img/flash/LED\ camera\ flash.jpg);
+}
+
+.card5{
+    background-image: url(../Img/lens/wide\ angle\ lens.jpg);
+}

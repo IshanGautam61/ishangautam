@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>Product</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/Headerstyle.css">
+        <link rel="stylesheet" href="../css/FooterStyle.css">
+        <link rel="stylesheet" href="../css/Product.css">
+    </head>
+
+    <!-- Header for the page -->
+    <header>
+        <div class="banner ">
+            <div class="navbar">
+                <a href="../Home.html"><img src="../Img/logo1.png" class="logo"></a>
+                <ul>
+                    <li><a href="../Home.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="box">
+            <h1 >Our Products</h1>
+            <div class="ImgBox">
+                <div class="img-slider">
+                    <div class="SlidingImg active">
+                        <a href="Categories/Tripod/Tripod2.html">
+                            <img src="../Img/tripod/flexible tripod.jpg" class="Slideimg">
+                            <div class="info">
+                                <h2>Vanguard Alta Pro 263AB 100 Aluminum Tripod</h2>
+                                <p>15% off</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="SlidingImg">
+                        <a href="Categories/Bag/Bag2.html">
+                            <img src="../Img/bag/Gear-Wandrd-Prvke-2.webp" class="Slideimg">
+                            <div class="info">
+                                <h2>Wandrd Prvke Camera Bag V2</h2>
+                                <p>25% off</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="SlidingImg">
+                        <a href="Categories/Lens/Lens2.html">
+                            <img src="../Img/lens/Prime lens.jpg" class="Slideimg">
+                            <div class="info">
+                                <h2>Canon EF-S 55-250mm F4-5.6 is STM</h2>
+                                <p>25% off</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="SlidingImg">
+                        <a href="Categories/Flash/Flash1.html">
+                            <img src="../Img/flash/Dedicated Camera Flash.jpg" class="Slideimg">
+                            <div class="info">
+                                <h2>Osaka Camera TTL Flash Speedlite Speedlight DF860 Mark III for All DSLR Cameras Like Nikon</h2>
+                                <p>25% off</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                var slides = document.querySelectorAll('.SlidingImg');
+                var btns = document.querySelectorAll('.btn');
+                let currentSlide = 1;
+
+                //js for manual slider
+
+                var manualNav = function(manual){
+                    slides.forEach((SlidingImg) => {
+                        SlidingImg.classList.remove('active');
+
+                        btns.forEach((btn) => {
+                            btn.classList.remove('active');
+                        });
+                    });   
+
+                    slides[manual].classList.add('active');
+                    btns[manual].classList.add('active');
+                }
+
+                btns.forEach((btn, i) => {
+                    btn.addEventListener("click",() => {
+                        manualNav(i);
+                        currentSlide = i;
+                    });
+                });
+
+                //js for automatic
+                var repeat = function(activeClass){
+                    let active = document.getElementsByClassName('active');
+                    let i = 1;
+
+                    var repeater = () => {
+                        setTimeout(function(){
+                            [...active].forEach((activeSlidingImg) => {
+                                activeSlidingImg.classList.remove('active');
+                            });
+                        
+                        slides[i].classList.add('active');
+                        btns[i].classList.add('active');
+                        i++;
+
+                        if(slides.length == i){
+                            i = 0;
+                        }
+                        if(i >= slides.length){
+                            return;
+                        }
+                        repeater();
+                    }, 5000);
+                    }
+                    repeater();
+                }
+                repeat();
+                </script>
+            </div>
+            <br>
+            <br>
+            <h1 >Categories</h1>
+            <div class="column" align="center">
+                <a href="Categories/Bag.html" class="card card1"><h3>Bag</h3></a>
+                <a href="Categories/MemoryCard.html" class="card card2"><h3>Memory Card</h3></a>
+                <a href="Categories/Tripod.html" class="card card3"><h3>Tripod</h3></a>
+                <a href="Categories/Flash.html" class="card card4"><h3>Flash</h3></a>
+                <a href="Categories/Lens.html" class="card card5"><h3>Lens</h3></a>
+            </div>
+        </div>
+        <!-- Starting Writing from here -->
+        
+    </body>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="Categories/Bag.html">Bag</a></li>
+                        <li><a href="Categories/MemoryCard.html">Memory Card</a></li>
+                        <li><a href="Categories/Tripod.html">Tripod</a></li>
+                        <li><a href="Categories/Flash.html">Flash</a></li>
+                        <li><a href="Categories/Lens.html">Lens</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Content</h4>
+                    <ul>
+                        <li><a href="Research.html">Research</a></li>
+                        <li><a href="About Us/AboutUs.html">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><img src="../Img/logo1.png" class="footerlogo"></li>
+                        <li>Phone Number</li>
+                        <li>Email</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <p style="color: white;font-weight: 300;display: block; font-size: 15px;" align="right">&copy CameraGear 2023</p>
+        </div>
+    </footer>
+</html>

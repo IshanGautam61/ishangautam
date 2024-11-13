@@ -1,0 +1,54 @@
+.form {
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border: 5px solid whitesmoke;
+    margin: 50px auto; /* Center horizontally */
+    height: auto; /* Let content adjust height */
+}
+
+/* Form elements alignment */
+.enter {
+    margin-bottom: 20px;
+}
+
+.details {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea */
+input, textarea {
+    width: 100%; /* Take full width within parent div */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    height: 100px;
+}
+
+/* Button */
+.button {
+    text-align: center;
+}
+
+.button input {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button input:hover {
+    background-color: white;
+    color: #e91e63;
+    border: 2px solid #e91e63;
+}

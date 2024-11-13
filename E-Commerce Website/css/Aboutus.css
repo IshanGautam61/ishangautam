@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.box {
+    box-sizing: border-box;
+    background-color: #1D212B;
+    margin: 0;
+    padding: 20px 0; /
+
+}
+
+
+footer {
+    margin-top: 4px;
+    padding-top: 10px;
+}
+
+header {
+    margin-bottom: 0;
+    padding-bottom: 4px;
+}
+
+
+.form {
+    margin-top: 20px; 
+}

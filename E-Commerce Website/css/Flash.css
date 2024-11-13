@@ -1,0 +1,101 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.Sidebar{
+    background: rgb(87, 81, 81);
+    width: 300px;
+    height: 900px;
+    margin-bottom: 10px;
+    border-color: black;
+}
+
+.Sidebar h2{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background-color: darkgray;
+    padding: 20px;
+}
+
+.Sidebar ul li{
+    margin: 25px 0;
+
+}
+
+.Sidebar ul li a{
+    padding: 0 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.box{
+    box-sizing: border-box;
+    width: auto;
+    height: 900px;
+    margin-left: 310px;
+    margin-bottom: -900px;
+}
+
+.box h2{
+    font-size: 30px;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+.column{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 730px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #aeb6b2; 
+    margin: 10px;
+    outline: 1px solid;
+
+}
+
+.column a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.column:hover{
+    outline: 2px solid;
+}
+
+.card{
+    box-sizing: border-box;
+    margin-left: 205px;
+    width: 500px;
+    height: 200px;
+
+}
+
+.img{
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+}
+
+.img1{
+    background-image: url(../Img/flash/Dedicated\ Camera\ Flash.jpg);
+}
+
+.img2{
+    background-image: url(../Img/flash/LED\ camera\ flash.jpg);
+}
+
+.img3{
+    background-image: url(../Img/flash/nikon-sb-700-af-speedlight-flash-009d364f4e88468db2bae3368df57df5.webp);
+}
+
